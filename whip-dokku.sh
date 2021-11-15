@@ -568,8 +568,8 @@ function funCheck()
         fi
     else
         echo "${RED}Dokku does not exist${END}"
-        # Show messagebox and make it mandatory to download and install dokku
-        whiptail --title "Unable to Detect Dokku" --msgbox "If you want to insatll your app using t2d, it is madatory to install Dokku. So, I would like to install Dokku on behalf of you." 10 60
+        # Show messagebox and make it necessary to download and install dokku
+        whiptail --title "Unable to Detect Dokku" --msgbox "If you want to insatll your app using t2d, it is necessary to install Dokku. So, I would like to install Dokku on behalf of you." 10 60
         wait
         echo "${YELLOW}Downloading Dokku from its Official Repository${END}"
         wget https://raw.githubusercontent.com/dokku/dokku/v0.24.10/bootstrap.sh
