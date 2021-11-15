@@ -368,7 +368,7 @@ foremIntro
                 wait
                 dokku git:set nforem deploy-branch main
                 wait
-                dokku git:sync --build nforem https://github.com/Giladx/forem.git &
+                dokku git:sync --build nforem https://github.com/VideoMapping/forem &
                 process_id=$!
                 wait $process_id
                 echo "Exit status: $?";
